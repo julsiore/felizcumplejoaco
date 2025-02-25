@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumple Joaco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs/corazonicon.png" type="image/png">
+    <script>
+        function checkPassword() {
+            var password = prompt("Escribe la contraseña:");
+            if (password !== "210824") {
+                alert("Contraseña incorrecta! Pon Aceptar.");
+                window.location.href = "incorrect.html"; // Redirect if incorrect
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
+    <h1>Bienvenido a esta página secreta, solo para Joaquin Jurado.</h1>
+    <p>Para ver el contenido, introduce la contraseña.</p>
+    <a href="content.html">Ver contenido</a>
+    <figure>
+        <img src="imgs/corazonsonrisa.png" alt="Corazón sonriendo" width="100">
+    </figure>
+</body>
+</html>
